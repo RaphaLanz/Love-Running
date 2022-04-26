@@ -24,7 +24,10 @@ h1,h2 {
 #logo {
      float: left;
      font-size: 280%;
+     margin-left: 30px;
 }
+
+/* navigation links */
 
 #menu {
     font-size: 110%;
@@ -82,10 +85,6 @@ animation-fill-mode: forwards;
 }
 
 
-
-
-
-
 /* creates the level of zoom for hero image*/
 
 @keyframes hero-zoom {
@@ -130,7 +129,6 @@ animation-fill-mode: forwards;
     width: 33%;
     float: left;
     
-
 }
 
 #right-about {
@@ -178,7 +176,7 @@ hr {
 
 #welcome {
     text-align: center;
-    margin: 20px;
+    margin: 20px 0;
     font-size: 280%;
 }
 
@@ -275,7 +273,7 @@ hr {
            margin: 0;
        }
 
-       #left-about, .right-about {
+       #left-about, #right-about {
               width: 100%;
               float: left;
               padding: 0;
@@ -293,3 +291,16 @@ hr {
        }
 }
     
+
+/* For medium screen sizes form 950px wide and down */
+@media screen and (max-width: 950px) {
+    
+    #menu{
+        clear: left;
+        float: left;
+        margin: 30px;
+        margin-bottom: 20px;
+        line-height: 25px;
+        
+    }
+}
